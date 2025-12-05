@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Materialize Framework Demo</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- MaterializeCSS CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS530 Lab10</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; }
+        header {
+            background: #4e73df;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
     </style>
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-wrapper teal">
-    <a class="brand-logo center">My Materialize Page</a>
-  </div>
-</nav>
+<header>
+    <h1>Problem 2</h1>
+</header>
+<div class="container content">
+    <p>
+        For this assignment, I chose the front-end framework <strong>MaterializeCSS</strong> because it is lightweight,
+        easy to use, and works directly through a CDN without requiring a backend server or build process.
+        To install it, I simply created an <code>index.html</code> file and added the CDN link to MaterializeCSS
+        in the header. This allowed me to immediately use the framework's typography, grid system, and simple styling
+        elements.
+    </p>
 
-<div class="container" style="margin-top: 40px;">
-    <div class="card">
-        <div class="card-content">
-            <span class="card-title">Problem 2 – Framework Write-Up</span>
+    <p>
+        To build this page, I designed a header section using a custom background color and a Google Font. Below it,
+        I added a centered content block with normal paragraphs explaining the installation process, build steps,
+        and challenges. GitHub Pages was used to host the site: I created a public repository, uploaded the file,
+        and enabled GitHub Pages under the repository settings so the page became publicly accessible.
+    </p>
 
-            <h5>1. Framework Chosen</h5>
-            <p>I chose MaterializeCSS, a lightweight front-end CSS framework based on Google's Material Design guidelines.</p>
+    <p>
+        During the process, the main difficulty I encountered was getting GitHub Pages to serve the site correctly.
+        At first, I received a 404 error because my file was not placed in the root directory and the Pages branch
+        settings were incorrect. After ensuring <code>index.html</code> was in the repository root and confirming
+        that GitHub Pages was set to deploy from the <strong>main branch</strong>, the site loaded successfully.
+        Another small issue was ensuring that the MaterializeCSS CDN link loaded over HTTPS, as GitHub Pages requires
+        secure connections, but this was solved by using the official CDN link.
+    </p>
 
-            <h5>2. How I Installed It</h5>
-            <p>
-                I used the CDN version. I simply added the MaterializeCSS stylesheet and script into the head of my HTML file.
-                No installation or dependency manager was needed.
-            </p>
-
-            <h5>3. How I Built the Page</h5>
-            <p>
-                I created a simple HTML page and used Materialize components such as a navbar, container, and card.
-                I also used Google Fonts to make the page look more modern.
-            </p>
-
-            <h5>4. Difficulties Encountered</h5>
-            <p>
-                At first, the Materialize JavaScript components were not working because I forgot to include the Materialize JS file 
-                and the script was in the wrong order. After placing the script tag under the CSS link, everything started working.
-            </p>
-
-            <p>
-                I also had trouble hosting the page at first because GitHub Pages only serves from a special branch or /docs folder.
-                I solved this by creating a new repository, enabling GitHub Pages inside Settings → Pages, and placing my HTML file
-                in the root of the repository.
-            </p>
-
-        </div>
-    </div>
+    <p>
+        Overall, the experience provided a simple introduction to using a front-end CSS framework and deploying
+        a small project using GitHub Pages.
+    </p>
 </div>
 
 </body>
